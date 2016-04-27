@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/pparidans/feedparser-promise.png?branch=master)](https://travis-ci.org/pparidans/feedparser-promise)
+
 # Feedparser-Promise - Robust RSS, Atom, and RDF feed parsing in Node.js, using Promise
 Promise based wrapper for the [feedparser](https://www.npmjs.com/package/feedparser) library.
 

@@ -1,10 +1,11 @@
 {
   "name": "feedparser-promise",
-  "version": "1.1.4",
+  "author": "Pierre Paridans <pierre@paridans.org>",
   "description": "Promise based wrapper for Feedparser",
+  "version": "1.1.4",
   "main": "index.js",
-  "engine": {
-    "node": "4.x"
+  "engines": {
+    "node": ">= 0.12.0"
   },
   "scripts": {
     "test": "mocha"
@@ -15,7 +16,10 @@
     "rss",
     "atom"
   ],
-  "author": "Pierre Paridans <pierre@paridans.org>",
+  "homepage": "http://github.com/pparidans/feedparser-promise",
+  "bugs": {
+    "url": "http://github.com/pparidans/feedparser-promise/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/pparidans/feedparser-promise.git"
