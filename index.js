@@ -1,3 +1,4 @@
+require('es6-promise').polyfill()
 const FeedParser = require('feedparser')
 
 module.exports = function FeedParserPromise(stream, opts) {
