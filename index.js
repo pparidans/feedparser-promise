@@ -1,6 +1,6 @@
 const FeedParser = require('feedparser')
 
-module.exports = function(stream, opts) {
+module.exports = function FeedParserPromise(stream, opts) {
   return new Promise( function(resolve, reject) {
     const feedparser = new FeedParser(opts || {})
     var items = [];

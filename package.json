@@ -29,7 +29,6 @@
     "feedparser": "^1.1.4"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "node-fetch": "^1.5.1"
+    "mocha": "^2.4.5"
   }
 }

@@ -1,12 +1,15 @@
-const FeedParser = require('../index')
-const fetch = require('node-fetch')
+const FeedParserPromise = require('../index')
+const fs = require('fs')
 
-describe('example', function() {
-  it('should fetch and parse a feed', function() {
-    fetch('http://la-grange.net/feed').then( function(res) {
-      FeedParser(res.body)
-        .then( function(feed) { assert(typeof(feed)) === 'Object' } )
-        .catch( function(err) { console.log('Feed parsing failed!', err) } )
-    })
+const testFeed = __dirname + '/feed.xml'
+
+describe('FeedParserPromise', function() {
+
+  it('should read a valid feed from filesystem and parse it', function() {
+    const fsFeed = fs.createReadStream(testFeed)
+    FeedParserPromise(fsFeed)
+      .then( function(feed) { assert(typeof(feed)) === 'Object' } )
+      .catch( function(err) { new Error('Feed parsing failed!', err) } )
   })
+
 })
