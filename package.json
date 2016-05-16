@@ -25,7 +25,7 @@
     "url": "https://github.com/pparidans/feedparser-promise.git"
   },
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "feedparser": "^1.1.4"
   },
   "devDependencies": {
